@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-785" y="14"/>
         </scene>
-        <!--Okta Login-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OktaLogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -88,7 +88,26 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Okta Login" id="MLO-Qd-Hen"/>
+                    <navigationItem key="navigationItem" id="MLO-Qd-Hen">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="lOO-L1-Iif">
+                            <rect key="frame" x="87.5" y="0.0" width="200" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="okta-logo" translatesAutoresizingMaskIntoConstraints="NO" id="6NY-hR-yzm">
+                                    <rect key="frame" x="64.5" y="10" width="71" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="6NY-hR-yzm" secondAttribute="height" multiplier="625:211" id="GYL-lg-j9m"/>
+                                        <constraint firstAttribute="height" constant="24" id="zQc-oD-gNp"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6NY-hR-yzm" firstAttribute="centerX" secondItem="lOO-L1-Iif" secondAttribute="centerX" id="e9K-as-Gtr"/>
+                                <constraint firstItem="6NY-hR-yzm" firstAttribute="centerY" secondItem="lOO-L1-Iif" secondAttribute="centerY" id="m7c-l5-aDG"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="dN9-qg-gwc" id="d5M-oK-UMK"/>
                         <outlet property="loginButton" destination="T7Z-wG-fNz" id="x8s-Si-8c9"/>
@@ -101,4 +120,7 @@
             <point key="canvasLocation" x="-10.4" y="13.943028485757123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="okta-logo" width="5000" height="1688"/>
+    </resources>
 </document>
